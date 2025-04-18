@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8; /* light background */
+  color: #333; /* dark text for contrast */
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+#home {
+  background: linear-gradient(135deg, #66b39f, #34a853); /* Soft green gradient */
+  color: white;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#home .btn-primary {
+  background-color: #fff;
+  color: #34a853; /* Greenish tone */
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#home .btn-primary:hover {
+  background-color: #f0f8f0; /* light green hover */
+  color: #2c8b3e; /* darker green */
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #34a853; /* Green underline */
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: #34a853; /* Greenish title color */
+}
+
+/* Skills */
+#skills .badge {
+  font-size: 1rem;
+  padding: 0.6em 1.2em;
+  border-radius: 50px;
+  background-color: #34a853; /* Green badges */
+  color: white;
+}
+
+/* Contact */
+#contact .btn-outline-dark {
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 0.6em 2em;
+  color: #34a853; /* Green text */
+  border: 2px solid #34a853;
+}
+
+#contact .btn-outline-dark:hover {
+  background-color: #e8f5e9; /* light green hover */
+  color: #2c8b3e; /* darker green */
+}
+
+#contact p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Responsive Tweak */
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2.2rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+}
